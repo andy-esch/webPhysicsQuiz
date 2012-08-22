@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz with JavaScript</title>
+        <link type="text/css" href="style.css" rel="stylesheet"  />
+        <script type="text/javascript" src="script.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="myHead">
+            <h1>Physics quiz of the future</h1>
+            <span id="breakPoint">trial</span>
+        </div>
+        <div id="everythingelse">
+            <form name="quizEntry">
+                <ol class="questions">
+                    <li>
+                        <label for="one">A bike is moving at  <span id="velocity"></span> km/hr. If it has <span id="distance"></span> km to go, how long will it take the cyclist to get there (in hours)?</label><br />
+                        <input type="text" name="one" /> <span class="units">hr(s)</span>
+                    </li>
+                    <li>
+                        <label for="two">If a ball is dropped from rest on the moon, <span id="time"></span> seconds later it has a velocity of <span id="vf"></span> m/s.  What is the acceleration on the Moon?</label><br />
+                        <input type="text" name="two" /> <span class="units">m/s<sup>2</sup></span>
+                    </li>
+                    <li>
+                        <label for="three">What is the capital of <span id="country"></span></label>
+                        <select name="three" id="valList">
+                            <option value=""></option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="four">Which equation did you use in Question 1?</label><br />
+                        <input type="radio" name="four" /><span class="equation">t = d / v</span><br />
+                        <input type="radio" name="four" /><span class="equation">t = sqrt(2 x / a)</span><br />
+                </ol>
+            </form>
+            <input type="button" value="Submit quiz results" onClick="submit()" />
+            <input type="button" value="Clear results" onClick="clearResults()" />
+            <input type="button" value="Get new values" onClick="loadValues()" />
+        </div>
+        <div id="summaryInfo"></div>
+    </body>
+
+
+</html>

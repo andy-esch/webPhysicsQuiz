@@ -1,0 +1,76 @@
+body {
+    color: #666;
+    margin: 0;
+    width: 100%;
+}
+
+form input {
+    margin: 16px 8px 8px 0;
+    -webkit-border-radius: 10px;
+    padding: 5px;
+    font-size: 24px;
+}
+
+#myHead {
+    background: #eee;
+    -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.6);
+    margin: 0;
+    position: relative;
+    top: -10px;
+    width: 100%;
+    padding: 15px;
+}
+
+#everythingelse {
+    border: 1px solid #ccc;
+    padding: 25px;
+    margin: 20px 55px;
+    -webkit-border-radius: 7px;
+    background: rgba(238,238,238,0.5);
+}
+
+    #everythingelse p.ques {
+        text-indent: 30px;
+    }
+
+    #everythingelse ol li {
+        margin: 20px auto;
+    }
+
+#summaryInfo {
+    margin: 15px 55px;
+    border: 1px solid orange;
+    padding: 15px;
+    display: none;
+    -webkit-border-radius: 8px;
+}
+
+    #summaryInfo > p {
+        -webkit-border-radius: 5px;
+        width: 25%;
+        padding: 10px;
+}
+
+.correct {
+    background: rgb(95,210,95);
+    border: 1px solid green;
+}
+
+.wrong {
+    background: rgb(242,222,222);
+    border: 1px solid red;
+}
+
+.response {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.rightwrong {
+    font-style: oblique;
+}
+
+.units {
+    font-style: oblique;
+    font-size: 24px;
+}
